@@ -17,7 +17,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/datajson", (req, res) => {
-  res.json(initdata);
+  try {
+    res.setHeader('Access-Control-Allow-Origin', 'http://192.168.11.6:3000')
+    res.status(201).send('ok');
+    res.json(initdata);
+  } catch(err) {
+    console.error(err);
+  }
 });
 
 app.listen(PORT, _ => {
