@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 app.get("/datajson", (req, res) => {
   try {
-    res.setHeader('Access-Control-Allow-Origin', 'http://192.168.11.6:3000')
+    res.setHeader('Access-Control-Allow-Origin', '*')
     res.status(201).json(initdata);
   } catch(err) {
     console.error(err);
