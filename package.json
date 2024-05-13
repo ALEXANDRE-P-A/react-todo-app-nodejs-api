@@ -1,0 +1,16 @@
+{
+  "name": "react_todo_app_nodejs_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "npm install"
+  },
+  "author": "Alexandre PA",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
